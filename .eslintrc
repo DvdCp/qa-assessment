@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:sonarjs/recommended"
+  ],
+  "parserOptions": { "ecmaVersion": 2022 },
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": [
+    "sonarjs",
+    "etc"
+  ],
+  "rules": {
+    "consistent-return": 0,
+    "function-paren-newline": [
+      "error",
+      "never"
+    ],
+    "no-await-in-loop": 0,
+    "max-len": 0,
+    "no-use-before-define": 0,
+    "lines-between-class-members": 0,
+    "sonarjs/no-identical-functions": 0,
+    "sonarjs/no-duplicate-string": 0,
+    "etc/no-commented-out-code":["error"]
+  }
+}
